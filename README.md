@@ -32,7 +32,8 @@ streamlit run movie_recommendation_app.py
 ```
 
 ## 📸 Preview
-![App Screenshot](screenshot.png)
+!![image](https://github.com/user-attachments/assets/942bc0f9-aa48-4c1f-acbd-19d79dc9cad4)
+
 
 ## 📌 Usage
 1. Run the application using Streamlit.
