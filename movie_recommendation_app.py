@@ -7,7 +7,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 st.title("Movie Recommendation System")
 
-uploaded_file = st.file_uploader("Upload Merged CSV File", type=["csv"])
+
 
 
 l = ['overview', 'cast', 'genres', 'director']
@@ -65,9 +65,9 @@ def recommend_movies(title, merged_df, cos_sim, weights=[0.5, 0.3, 0.2, 0.2], to
 
 
 
-if uploaded_file is not None:
-    merged_df = pd.read_csv(uploaded_file)
-    st.write("File uploaded successfully!")
+if True is not None:
+    merged_df = pd.read_csv('./merged_movies.csv')
+    
     
     tfidf_list = calculate_tfidf_matrix(merged_df)
     cos_sim_list = calculate_cosine_similarity(tfidf_list)
@@ -76,11 +76,7 @@ if uploaded_file is not None:
     movie_title = st.text_input("Enter a movie title:")
     
     if st.button("Recommend"):
-        # if "cos_sim.npy" in st.session_state:
-        #     cos_sim = st.session_state["cos_sim"]
-        # else:
-        #     cos_sim = np.load("cos_sim.npy")
-        #     st.session_state["cos_sim"] = cos_sim
+       
 
         recommendations = recommend_movies(movie_title, merged_df, cos_sim_list)
         
