@@ -40,8 +40,6 @@ streamlit run movie_recommendation_app.py
 2. Enter a movie title in the input field.
 3. Click **Recommend** to get a list of similar movies.
 
-## 📜 License
-This project is open-source and available under the **MIT License**.
 
 ---
 👨‍💻 Developed by **Muhammad Owais**
